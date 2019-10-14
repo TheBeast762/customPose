@@ -1,0 +1,8 @@
+Hello everyone.
+Thank you all for coming.
+Welcome to today's presentation.
+This is an experimental situation to test the capabilities of this software.
+The text is divided into parts which are all highlighted with different emotions.
+The speech recognition is used as an indicator to know what part of the speech the user is currently at.
+The user's movements are tracked in order to stimulate a dynamic pose while presenting.
+This is done through the use of icon feedback in the User Interface.

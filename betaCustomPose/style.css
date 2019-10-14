@@ -1,0 +1,147 @@
+html {
+  font-family: "Helevetica", sans-serif;
+}
+
+body {
+  color: #333;
+  font-weight: 100;
+  float: left;
+}
+
+div:focus {
+  outline: none;
+}
+
+#content {
+  padding-top: 20px;
+  font-size: 18px;
+  width: 50em;
+  float: left;
+  outline: solid;
+  resize: none;
+  height: 37em;
+  max-width: 50em;
+  word-break: break-all;
+  cursor: text;
+  overflow: auto
+}
+
+#header{
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  max-width: 29.8em;
+}
+
+.buttonStyle {
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #000000;
+	display: inline-block;
+	cursor: pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 14px 14px 14px;
+    margin: 4px 4px 4px 4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    width: 8em;
+}
+
+.buttonStyle:active {
+	position:relative;
+	top:2px;
+}
+
+.buttonLog {
+  border: 1px solid #000000;
+  color: white;
+  padding:4px 4px 4px 4px;
+  margin: 4px 4px 4px 0px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-family:Arial;
+  width: 5em;
+}
+
+.buttonLog:active {
+	position:relative;
+	top:2px;
+}
+
+.buttonSend {
+  border: 1px solid #000000;
+  color: white;
+  padding:10px 10px 10px 10px;
+  margin: 4px 4px 2px 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-family:Arial;
+  width: 15em;
+}
+
+.buttonSend:active {
+    position:relative;
+	top:2px;
+}
+
+.anger{
+    color: red; display: inline;
+}
+
+.happiness{
+    color: green; display: inline;
+}
+
+.sadness{
+    color: blue; display: inline;
+}
+
+.surprise{
+    color: orange; display: inline;
+}
+
+.fear{
+    color: purple; display: inline;
+}
+
+.disgust{
+    color: pink; display: inline;
+}
+
+.neutral{
+    color: black; display: inline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
+
+#gui { position: absolute; left: 1197px; top: 388px; }    
+        
+.footer-text {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-text, .dg {
+    display: none;
+  }
+}
+

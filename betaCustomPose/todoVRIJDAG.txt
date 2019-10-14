@@ -1,0 +1,67 @@
+-> koppelen speech met detecteren
+- factoren aan presentaties qua verbeterpunten
+-YES HEURISTIEK e.g.; gezicht weg van publiek, stilstaan/geen beweging van keypoints, arousal koppelen aan welke emotie nodig is, 
+-YES realtime feedback op een duidelijke plek in de UI
+- research: is er een rating instrument/5puntschaal voor presentatie kwaliteit
+- pilot: laat vrienden het testen
+- experiment
+- gespiegeld emotie label uit de webcam UI halen en normaal op de text editor UI zetten
+
+
+- emotie die vertoond is over hele uitspraak van zin
+- logs houden feedback bij
+
+
+https://academic.oup.com/applij/article/11/1/90/255991
+
+Average words per minute/syllables per minute in british english!^^
+Avg for lectures: 141.7 w.p.m.     (194.5 s.p.m.)    157-273 syllables per minute
+
+
+
+
+
+https://www.degruyter.com/downloadpdf/j/iral.1966.4.issue-1-4/iral.1966.4.1-4.183/iral.1966.4.1-4.183.pdf
+
+Average time/length of syllables^ in English^^
+12.01-40.81 centiseconds = 120.1-408.1 miliseconds  //duration per syllable
+157-273 syllable per minute range
+0,002616667-0,00455 syllable per millisecond range  //amount of syllable per time
+
+0,002616667*120.1 = 0,3123 millisecond/syllable        lowerbound
+0,00455*408.1 = 1,857 millisecond/syllable                  upperbound
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To write about:
+_______________
+- The                     velocitySum = (N-1) * (velocitySum/N) + velocity;                  runningNFrameAvg = velocitySum/N;          formula applied
+
+
+
+
+Prologue: V
+Introduction: 
+    Motivation and related work: (7 basic emotions of Ekman)(ACTUAL RELATED WORK IDIOT, speech feedback)
+Research Question: (Don't mention OpenFace/OpenPose)
+    Hypothesis: V
+Method: (How i studied the hypothesis, why I chose for an experiment)
+    Materials: (Why no OpenPose/OpenFace)(posenet in js)(faceExpression in js)(speech recognition in js)(speech velocity per syllable)(the user interface(logMode))(feedback system/icons)(string similarity function)
+    Experimental setup / approach: (describe the experiment set up)
+    Measures: (questionnaire of test audience)
+Results: (Accuracy of the program)
+    Discussion: (shortcomings of program)
+Conclusion and further research: (Answer the research question)
+
+

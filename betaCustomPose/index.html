@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>PoseNet - Camera Feed Demo</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="app.js"></script>
+	</head>
+	<div id="header">Emotional Highlighting <font size="4">(Highlight a sentence and click the button! All non-highlighted text will be removed.)</font></div>
+	<br>
+    <div class="container">
+        <div class="backdrop">
+            <div class="highlights">
+            </div>
+        </div>
+        <div id="content" placeholder="Enter your speech here!" contenteditable="true"></div>
+    </div>
+    <center>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('anger');" style="background-color:#f44141;">Anger</a>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('happiness');" style="background-color:#25ce00;">Happiness</a>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('sadness');" style="background-color:#5042f4;">Sadness</a>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('surprise');" style="background-color:#ff9900;">Surprise</a>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('fear');" style="background-color:#aa00ff;">Fear</a>
+        <a href="#" class="buttonStyle" onclick="highlightSelection('disgust');" style="background-color:#FFC0CB;">Disgust</a>	
+        <a href="#" class="buttonStyle" onclick="highlightSelection('neutral');" style="background-color:#000000;"><font color="white">Neutral</font></a>	
+        <a href="#" class="buttonSend" onclick="startButton();" style="background-color:#D3D3D3;">Start</a>
+        <a href="#" class="buttonLog" onclick="toggleLog();" style="background-color:#585858"><font color="white">Logs</font></a><!if not in logMode, pause Stats(), if in logMode, start Stats()> 
+    
+        <div id="loading">
+            Loading the model...
+        </div>
+        
+        <div id='main' style='display:inline; margin-left: 900px;' >
+            <div style='border: 4px solid #1abc9c; width: 400px; height: 400px;'>
+                <video id="video" playsinline style="-moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                display: none;
+                ">
+                </video>
+            <canvas id="output" />
+            </div>
+        </div>  
+    </center>
+    
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.2/build/dat.gui.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+    <script src="demo_util.js"></script>
+    <script src="stats.min.js "></script>
+    <script src="camera.js"></script>
+</html>
+
+
